@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab1</title>
+    <link rel = "stylesheet" type="text/css" href="stylesheets/main_stylesheet.css" media="screen"/>
+    <div class="topic"> Властивості CSS для роботи з блочною моделлю </div>
+</head>
+<body>
+    <div class="top_block">
+        <div class="author"> Лабораторна робота №1. Виконавець: Масловський Михайло, ТР-91 </div>
+        <div class="empty_div"></div>
+        <div class="info_block">
+            <div class="info"> <div class="text">  В цьому тесті представлені запитання пов'язані з блоком\блочною моделлю. <br>
+            Наприклад margin, padding, border, etc. </div> </div>
+            <div class="pictures">
+                <img id="rat1" src="images/rat1.jpg" alt="fat rat">
+                <img id="rat2" src="images/rat2.jpg" alt="smoking rat">
+                <img id="rat3" src="images/rat3.jpg" alt="cute rat">
+            </div>
+        </div>
+    </div>
+    <nav class="nav">
+        <a class="nav_text" href="#1"> 1 </a>
+        <a class="nav_text" href="#2"> 2 </a>
+        <a class="nav_text" href="#3"> 3 </a>
+        <a class="nav_text" href="#4"> 4 </a>
+        <a class="nav_text" href="#5"> 5 </a>
+        <a class="nav_text" href="#6"> 6 </a>
+        <a class="nav_text" href="#7"> 7 </a>
+    </nav>
+    <div class="bottom_block">
+        <div class="question" id="1">
+            <form>
+                Які (за замовчуванням) властивості додаються до значення властивості <b><i> width</i></b>? <br><br>
+                <input type="checkbox" id="1_ans1" value="padding-left">
+                <label for="1_ans1"> padding-left</label><br>
+                <input type="checkbox" id="1_ans2" value="display">
+                <label for="1_ans2"> display</label><br>
+                <input type="checkbox" id="1_ans3" value="margin-right">
+                <label for="1_ans3"> margin-right</label><br>
+                <input type="checkbox" id="1_ans4" value="border">
+                <label for="1_ans4"> border</label>
+            </form>
+        </div>
+        <div class="question" id="2">
+            <form>
+                За замовчуванням значення ширини блоку <b><i> width</i></b>? <br><br>
+                <input type="radio" id="2_ans1" name="2">
+                <label for="2_ans1">50vh</label><br>
+                <input type="radio" id="2_ans2" name="2">
+                <label for="2_ans2">auto</label><br>
+                <input type="radio" id="2_ans3" name="2">
+                <label for="2_ans3">inherit</label><br>
+                <input type="radio" id="2_ans4" name="2">
+                <label for="2_ans4">100%</label>
+            </form>
+        </div>
+        <div class="question" id="3">
+            <form>
+                Яка властивість використовується для визначення алгоритма розрахунку ширини та висоти елементу? <br><br>
+                <label for="3_ans">Відповідь:</label><br>
+                <input type="text" id="3_ans"><br>
+            </form>
+        </div>
+        <div class="question" id="4">
+            <form>
+                Дію якої властивості відміняє <b><i>clear</i></b>?<br><br>
+                <input type="radio" id="4_ans1" name="4">
+                <label for="4_ans1">float</label><br>
+                <input type="radio" id="4_ans2" name="4">
+                <label for="4_ans2">margin</label><br>
+                <input type="radio" id="4_ans3" name="4">
+                <label for="4_ans3">padding</label><br>
+                <input type="radio" id="4_ans4" name="4">
+                <label for="4_ans4">alignment</label>
+            </form>
+        </div>
+        <div class="question" id="5">
+            <form>
+                При якому значенні властивості <b><i>display</i></b>
+                елемент відображається як вбудований? Тобто новий елемент починається там, де закінчився попередній.<br><br>
+                <label for="cars">Відповідь:</label>
+                <select name="cars" id="cars">
+                    <option value="block">block</option>
+                    <option value="inline-block">inline-block</option>
+                    <option value="inline">inline</option>
+                </select>
+            </form>
+        </div>
+        <div class="question" id="6">
+            <form>
+                Яка властивість відповідає за відступ зовні елементу?<br><br>
+                <input type="radio" id="6_ans1" name="6_ans">
+                <label for="6_ans1">padding</label><br>
+                <input type="radio" id="6_ans2" name="6_ans">
+                <label for="6_ans2">margin</label><br>
+                <input type="radio" id="6_ans3" name="6_ans">
+                <label for="6_ans3">outline</label>
+            </form>
+        </div>
+        <div class="question" id="7">
+            <form>
+                Які з наведених властивостей впливають на фон? <br><br>
+                <input type="checkbox" id="7_ans1">
+                <label for="7_ans1"> background-image</label><br>
+                <input type="checkbox" id="7_ans2">
+                <label for="7_ans2"> border</label><br>
+                <input type="checkbox" id="7_ans3">
+                <label for="7_ans3"> background</label><br>
+                <input type="checkbox" id="7_ans4">
+                <label for="7_ans4"> background-color</label><br>
+                <input type="checkbox" id="7_ans5">
+                <label for="7_ans5"> color</label>
+            </form>
+        </div>
+        <div class="foot_space"></div>
+    </div>
+</body>
+<footer>
+    <div class="result"> Результати </div>
+    <div class="amount">
+        <a>Кількість правильних:</a> <br>
+        <a>Кількість неправильних:</a>
+    </div>
+    <br>
+    <div class="congrats"> Вітання! Ви пройшли тест! </div>
+</footer>
+</html>

@@ -1,0 +1,188 @@
+.topic{
+    position: relative;
+    width: 100vw;
+    height: 40px;
+    color: #000000;
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+body{
+    width: 100vw;
+}
+
+.top_block{
+    border: 1px black dashed;
+    position: absolute;
+    left: 6vw;
+    width: 90vw;
+    height: 40vh;
+}
+
+.author{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 91.5%;
+    height: 6vh;
+    line-height: 6vh;
+    color: #565656;
+    background-color: white;
+    border-bottom: 1px black dashed;
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.empty_div{
+    position: relative;
+    height: 6vh;
+}
+
+.info_block{
+    position: relative;
+    width: 100%;
+    height: 34vh;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.info{
+    float: left;
+    width: 66%;
+    height: inherit;
+}
+.text, form{
+    padding: 15px;
+}
+form{
+}
+.pictures{
+    position: relative;
+    float:left;
+    width: 33.7%;
+    height: inherit;
+    border-left: 1px black solid;
+}
+
+.pictures img{
+    margin: 20px;
+    position: absolute;
+    border-radius: 25px;
+    width: 12vw;
+}
+
+.pictures img:hover {
+    z-index: 9;
+    width: 13vw;
+    animation: z_anim 1 1s;
+}
+
+@keyframes z_anim {
+    0%{width: 12vw;}
+    100%{
+        width: 13vw;
+    }
+}
+
+#rat2{
+    top: 90px;
+    left: 90px;
+}
+
+#rat3{
+    top: 160px;
+    left: 160px;
+}
+
+.nav{
+    display: flex;
+    position: relative;
+    top: 39vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80vw;
+    height: 40px;
+    line-height: 40px;
+}
+
+.nav_text{
+    flex-grow: 0.5;
+    color: black;
+    background-color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    font-style: normal;
+    border: 1px black solid;
+    z-index: 9;
+}
+
+.bottom_block{
+
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 39vh;
+    width: 90vw;
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+.question{
+    width: 100%;
+    border: 1px black dashed;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+.foot_space{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 66px;
+}
+
+footer{
+    background-color: white;
+    width: 90vw;
+    left: 6%;
+    bottom: 0;
+    position: fixed;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+    bottom: 0;
+}
+
+.result{
+    width: 20%;
+    height: 20px;
+    border: 1px black dashed;
+    text-align: center;
+    float: left;
+}
+
+.amount{
+    width: 30%;
+    float: left;
+    border: 1px black dashed;
+}
+.congrats{
+    width: 40%;
+    clear: left;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px black dashed;
+    text-align: center;
+}
