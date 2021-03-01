@@ -1,0 +1,45 @@
+body{
+    background-color: white;
+    margin: 0;
+}
+header{
+    background-color: magenta;
+    height: 50px;
+    position: relative;
+    line-height: 50px;
+    vertical-align: center;
+}
+@media all{
+    nav{
+        width: 80%;
+        height: 100%;
+        position: relative;
+    }
+
+    nav a{
+        position: relative;
+        margin-left: 5vw;
+        color: white;
+        height: 100%;
+        border-radius: 25px;
+        font-size: 1.5em;
+        font-weight: 600;
+        font-family: Calibri;
+        text-decoration: none;
+    }
+
+    #logo{
+        z-index: 999;
+        width: 120px;
+        position: absolute;
+        right: 2vw;
+        top: 0;
+    }
+}@media all and (max-width: 1280px) {
+    nav{
+    }
+}@media all and (max-width: 768px){
+
+}@media all and (max-width: 480px){
+
+}
