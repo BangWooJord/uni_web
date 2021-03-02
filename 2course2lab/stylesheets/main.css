@@ -1,19 +1,21 @@
-body{
+@media all{
+    body{
     background-color: white;
     margin: 0;
-}
-header{
-    background-color: magenta;
-    height: 50px;
-    position: relative;
-    line-height: 50px;
-    vertical-align: center;
-}
-@media all{
+    font-family: Calibri;
+    }
+    header{
+        background-color: #01324c;
+        height: 40px;
+        position: relative;
+        line-height: 40px;
+        vertical-align: center;
+    }
     nav{
         width: 80%;
         height: 100%;
         position: relative;
+        overflow: hidden;
     }
 
     nav a{
@@ -22,10 +24,10 @@ header{
         color: white;
         height: 100%;
         border-radius: 25px;
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: 600;
-        font-family: Calibri;
         text-decoration: none;
+        max-height: inherit;
     }
 
     #logo{
@@ -35,11 +37,141 @@ header{
         right: 2vw;
         top: 0;
     }
+    #header_text{
+        color: #01324c;
+        position: relative;
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+    #subheader_text{
+        color: #007fc0;
+        margin-top: 0;
+    }
+    .body_content{
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .pipes_content{
+        width: 100%;
+        position: relative;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pipes_text{
+        width: 40vw;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .pipes_content button{
+        background-color: #007fc0;
+        color: white;
+        width: 130px;
+        padding: 5px;
+        border: none;
+        border-radius: 15px;
+        outline: none;
+    }
+    .pipes_content button:hover{
+        cursor: pointer;
+        background-color: #01324c;
+    }
+    #pipes_img{
+        width: 40vw;
+        height: 100%;
+    }
+    #pipes_header{
+        color: #01324c;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .second_block{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    mark{
+        background-color: #007fc0;
+        color: white;
+    }
+    .left_text{
+        width: 33vw;
+    }
+    .middle_text{
+        width: 26vw;
+    }
+    .middle_text ul{
+        list-style-type: none;
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+    .middle_text li{
+        height: auto;
+        display: flex;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .middle_text h3{
+        margin: 0;
+        color: #01324c;
+    }
+    .middle_text img{
+        width: 15%;
+        float: left;
+    }
+    .li_text{
+        margin-left: 15px;
+    }
+    .water_content{
+        position: relative;
+        width: 33vw;
+    }
+    #water_img{
+        width: 30vw;
+    }
+    #water_header{
+        color: #01324c;
+    }
 }@media all and (max-width: 1280px) {
     nav{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body{
+    }
+    #logo{
+        left: 44vw;
+        top: 60px;
+    }
+    .left_text, .middle_text{
+        width: 40vw;
+    }
+    .middle_text img{
+        display: none;
+    }
+    #header_text{
+        color: #01324c;
+        position: relative;
+        margin-top: 150px;
+        margin-bottom: 0;
     }
 }@media all and (max-width: 768px){
-
+    .pipes_content{
+        display: none;
+    }
+    .water_content, .left_text, .middle_text, #water_img {
+        width: 90vw;
+        margin-bottom: 20px;
+    }
+    .second_block{
+        display: block;
+    }
 }@media all and (max-width: 480px){
-
+    .pipes_content{
+        display: none;
+    }
 }
