@@ -3,7 +3,7 @@ body{
     margin: 0;
 }
 header{
-    background: linear-gradient(180deg, white 36%, grey 10%);
+    background: linear-gradient(180deg, white 36%, lightgrey 10%);
     height: 100px;
     position: relative;
     display: flex;
@@ -44,13 +44,13 @@ header{
     margin-top: 2px;
     width: 150px;
     height: 90%;
-    background-color: grey;
+    background-color: lightgrey;
     padding: 5px 15px;
     border: 0;
     color: black;
 }
 .top_line button:hover{
-    background-color: lightgray;
+    background-color: gray;
 }
 button:hover{
     cursor: pointer;
@@ -69,7 +69,7 @@ button:hover{
     justify-content: space-between;
 }
 .bottom_line nav a:hover{
-    background-color: lightgray;
+    background-color: gray;
 }
 nav a{
     text-decoration: none;
@@ -77,6 +77,99 @@ nav a{
 }
 
 .body_content{
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.body_content h1{
+    margin: 50px 120px;
+}
+
+.body_content ul{
+    width: 100%;
+    position: relative;
+    list-style-type: none;
+    display: flex;
+}
+.body_content li{
+    flex-grow: 0.5;
+    border: 1px black solid;
+    text-align: center;
+    margin: 1vw;
+}
+
+.body_content h3{
+    margin: 0;
+    padding: 0;
+}
+
+.body_content img{
+    max-width: 100%;
+}
+
+.body_content li p{
+    color: red;
+    font-weight: 600;
+}
+
+.li_body{
+    margin: 10px;
+}
+
+.body_content li button{
+    border: none;
+    background-color: lightgrey;
+    width: 90%;
+    padding: 8px;
+    font-weight: 600;
+}
+
+.items_container{
+    position: relative;
+}
+
+.contact_container{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    height: 300px;
+    border: 1px black solid;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact_text{
+    width: 400px;
+    margin: 50px 0;
+}
+
+.contact {
+    margin: 50px 0;
+    border: 1px black solid;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.contact h3, input, button{
+    margin: 0 auto;
+}
+
+.contact input {
+    width: 80%;
+    padding: 10px;
+    border: 1px black solid;
+}
+
+.contact button{
+    border: 1px black solid;
+    background-color: lightgray;
+    font-weight: 600;
+    padding: 10px;
+    width: 80%;
+}
+.contact button:hover{
+    background-color: grey;
 }
