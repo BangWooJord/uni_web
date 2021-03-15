@@ -135,7 +135,7 @@
     #water_header{
         color: #01324c;
     }
-}@media all and (max-width: 1280px) {
+}@media (max-width: 1280px) {
     nav{
         width: 100%;
         margin-left: auto;
@@ -159,7 +159,7 @@
         margin-top: 150px;
         margin-bottom: 0;
     }
-}@media all and (max-width: 768px){
+}@media  (max-width: 768px){
     .pipes_content{
         display: none;
     }
@@ -170,7 +170,7 @@
     .second_block{
         display: block;
     }
-}@media all and (max-width: 480px){
+}@media  (max-width: 480px){
     .pipes_content{
         display: none;
     }
