@@ -90,9 +90,14 @@ nav a{
     position: relative;
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .body_content li{
     flex-grow: 0.5;
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
     border: 1px black solid;
     text-align: center;
     margin: 1vw;
@@ -113,7 +118,15 @@ nav a{
 }
 
 .li_body{
+    flex-grow: 1;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.li_body h3{
+    flex-grow: 1;
 }
 
 .body_content li button{
@@ -132,9 +145,9 @@ nav a{
     position: relative;
     width: 90%;
     margin: 0 auto;
-    height: 300px;
     border: 1px black solid;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
