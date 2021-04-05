@@ -8,8 +8,6 @@ window.onload=function(){
         if(!n.value) btn.disabled = true;
         k.addEventListener('change',function(){
             btn.disabled = (!k.value || !n.value)
-            n_value = n.value;
-            k_value = k.value;
         })
     })
 }
@@ -22,6 +20,8 @@ function fact(val){
 function seq(){
     let ans = document.getElementById('res_1')
     let amount = 0;
+    n_value = n.value;
+    k_value = k.value;
     if(k_value > 0 && n_value > 0){
         let i = 1;
         ans.innerText = '';
@@ -35,7 +35,10 @@ function seq(){
             ans.innerHTML += " " + str_res;
             i += parseInt(k_value);
         }
+        alert('Кількість членів, що є квадратами парних чисел: ' + amount);
     }
-    alert('Кількість членів, що є квадратами парних чисел: ' + amount);
+    else{
+        alert('Введене число не вірне')
+    }
     return amount;
 }
