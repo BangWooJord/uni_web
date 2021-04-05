@@ -1,0 +1,56 @@
+body{
+    text-align: center;
+    font-family: Ubuntu;
+}
+
+h1{
+    color: purple;
+}
+table{
+    border-spacing: 15px 0;
+}
+
+tr{
+    position: relative;
+}
+th {
+    color: purple;
+    font-size: 1.5em;
+    padding: 5px;
+}
+td{
+    border-bottom: 1px solid black;
+    padding: 20px;
+    text-align: justify;
+
+}
+td button{
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid purple;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-weight: 600;
+}
+td button:hover{
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+}
+td button:focus{
+    outline: none;
+}
+
+.td_input{
+    margin-top: 20px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.td_input input{
+    border: 1px solid purple;
+    padding: 2px 5px;
+    border-radius: 5px;
+    width: 30%;
+}

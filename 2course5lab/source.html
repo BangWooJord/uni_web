@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <script type="text/javascript" src="script/main_script.js"> </script>
+    <title>TR-91</title>
+</head>
+<body>
+    <h1>Масловський Михайло</h1>
+    <h3>ТР-91 №13</h3>
+    <table>
+        <colgroup>
+            <col span="1" style="width: 40%;">
+            <col span="1" style="width: 30%;">
+            <col span="1" style="width: auto;">
+        </colgroup>
+        <tr>
+            <th> Завдання</th>
+            <th> Виконання</th>
+            <th> Результат</th>
+        </tr>
+        <tr>
+            <td>Напишіть функцію, що шукає послідовність b1..bn та повертає
+                кількість членів цієї послідовності, що є квадратами парних чисел.
+                Зробити вивід всієї послідовності, виділивши іншим кольором
+                числа, що є квадратами парних чисел, а потім вивести результати
+                функції. Послідовність розраховується за формулою bі=2і
+                /і!, де і=1,..., n; n та крок - задає користувач. Після введення зробити
+                перевірку на коректність введених даних з виведенням
+                повідомлення про результати.
+            </td>
+            <td>
+                <button id="do_btn_1" onclick="seq()" disabled>Виконати</button>
+                <div class="td_input">
+                    <input type="number" id="n_input" placeholder="n"/>
+                    <input type="number" id="step" placeholder="крок"/>
+                </div>
+            </td>
+            <td id="res_1">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
