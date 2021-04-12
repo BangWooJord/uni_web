@@ -26,9 +26,9 @@ function seq(){
         let i = 1;
         ans.innerText = '';
         while(i <= n_value){
-            let res = (Math.pow(2,i)/fact(i));
+            let res = Math.pow(2,i)*fact(i);
             let str_res = String(res.toPrecision(2));
-            if(Math.sqrt(res) % 2 === 0){
+            if(res % 2 === 0){
                 amount++;
                 str_res = str_res.fontcolor('purple');
             }
